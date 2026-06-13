@@ -6,79 +6,60 @@
 <title>Onno Meeuwsen</title>
 
 <style>
-:root{
-  --bg:#f6f5f2;
-  --text:#111;
-  --muted:rgba(0,0,0,0.6);
-}
-
-*{
-  box-sizing:border-box;
-}
-
 body{
   margin:0;
   font-family: Inter, Helvetica, Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
+  background:#f6f5f2;
+  color:#111;
 }
 
 /* NAV */
 nav{
   position:sticky;
   top:0;
-  z-index:100;
   display:flex;
   justify-content:space-between;
-  padding:16px 18px;
-  background:rgba(246,245,242,0.85);
-  backdrop-filter: blur(12px);
+  padding:14px 16px;
+  background:rgba(246,245,242,0.9);
+  backdrop-filter: blur(10px);
   font-size:13px;
-}
-
-nav .links a{
-  margin-left:12px;
-  text-decoration:none;
-  color:var(--text);
-  opacity:0.7;
+  z-index:10;
 }
 
 /* HERO */
 .hero{
-  height:70vh;
+  height:65vh;
   display:flex;
   flex-direction:column;
   justify-content:flex-end;
-  padding:24px 18px;
+  padding:20px 16px;
 }
 
 .hero h1{
-  font-size:44px;
+  font-size:38px;
   margin:0;
-  letter-spacing:-1px;
 }
 
 .hero p{
-  margin-top:12px;
+  opacity:0.6;
   max-width:320px;
-  color:var(--muted);
 }
 
-/* SECTION */
+/* SECTIONS */
 section{
-  padding:24px 18px;
+  padding:24px 16px;
 }
 
 h2{
-  font-size:18px;
-  margin-bottom:14px;
+  font-size:16px;
+  margin-bottom:12px;
 }
 
-/* GALLERY MOBILE FIRST */
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:1fr;
-  gap:12px;
+  gap:10px;
 }
 
 @media(min-width:600px){
@@ -91,27 +72,25 @@ h2{
 
 .card{
   overflow:hidden;
-  border-radius:6px;
   background:#fff;
   cursor:pointer;
 }
 
 .card img{
   width:100%;
-  height:auto;
   display:block;
-  transition:0.35s ease;
+  transition:0.25s ease;
 }
 
-.card:hover img{
-  transform:scale(1.03);
+.card img:hover{
+  transform:scale(1.02);
 }
 
 /* ABOUT */
 .about{
-  max-width:680px;
-  color:var(--muted);
-  line-height:1.7;
+  max-width:700px;
+  opacity:0.65;
+  line-height:1.6;
 }
 
 /* LIGHTBOX */
@@ -129,66 +108,84 @@ h2{
   max-width:92%;
   max-height:92%;
 }
-
-/* MOBILE OPTIMISATIE */
-@media(max-width:600px){
-  .hero h1{ font-size:36px; }
-}
 </style>
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
   <div><strong>ONNO MEEUWSEN</strong></div>
-  <div class="links">
-    <a href="#works">Works</a>
-    <a href="#about">About</a>
-    <a href="#exhibitions">Exhibitions</a>
-  </div>
+  <div>Works About</div>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
   <h1>Painter</h1>
-  <p>
-    Exploring intimacy, digital desire and queer identity in contemporary painting.
-  </p>
+  <p>Exploring intimacy, digital culture and queer identity.</p>
 </div>
 
 <!-- WORKS -->
-<section id="works">
-  <h2>Works</h2>
+<section>
+<h2>Works</h2>
 
-  <div class="grid">
+<div class="grid">
 
-    <!-- 👇 ECHTE ASSETS (van jouw repo) -->
-    <div class="card"><img src="assets/images/1.jpg"></div>
-    <div class="card"><img src="assets/images/2.jpg"></div>
-    <div class="card"><img src="assets/images/3.jpg"></div>
-    <div class="card"><img src="assets/images/4.jpg"></div>
-    <div class="card"><img src="assets/images/5.jpg"></div>
-    <div class="card"><img src="assets/images/6.jpg"></div>
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/623292263_18562725625062616_777881158723495052_n.jpg">
 
-  </div>
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/625048190_18066067784265609_6711625965655260995_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/626463264_18017906840805800_5534612427318892020_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/637678254_18568777948062616_7924040923897244192_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/640224613_18570315145062616_5835533899069698658_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/656204356_18128743489485402_7289934364028194109_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/656545461_18147763984464058_3192285722574450768_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/701123355_18596630659062616_6794797808749341724_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/701227934_18595618426062616_7810585446497463495_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/703131648_18596630662062616_8325575522671908563_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/703890777_18597697897062616_1937513889446602593_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/705729498_18597697888062616_7406839567558011317_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/711566315_18600922786062616_3718108423161268416_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/712904104_18600922804062616_3836152968144868878_n.jpg">
+
+<img class="img"
+src="https://raw.githubusercontent.com/timmit147/Onnomeeuwsen_v2/main/assets/images/713563223_18600922795062616_2229943581784989806_n.jpg">
+
+</div>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
-  <h2>About</h2>
-  <div class="about">
-    Onno Meeuwsen is a contemporary painter whose work explores queer intimacy,
-    digital culture, and emotional vulnerability in online environments.
-  </div>
-</section>
-
-<!-- EXHIBITIONS -->
-<section id="exhibitions">
-  <h2>Exhibitions</h2>
-  <div class="about">
-    2025 — Museum of Young Art<br>
-    2024 — HKU Graduation Show<br>
-    2024 — Group Exhibition Amsterdam
-  </div>
+<section>
+<h2>About</h2>
+<div class="about">
+Onno Meeuwsen is a contemporary painter exploring queer intimacy,
+digital identity and emotional vulnerability in online culture.
+</div>
 </section>
 
 <!-- LIGHTBOX -->
@@ -197,14 +194,14 @@ h2{
 </div>
 
 <script>
-const imgs = document.querySelectorAll(".card img");
+const imgs = document.querySelectorAll(".img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
 
 imgs.forEach(img=>{
   img.addEventListener("click",()=>{
     lightbox.style.display="flex";
-    lightboxImg.src = img.src;
+    lightboxImg.src=img.src;
   });
 });
 
